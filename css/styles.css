@@ -1,0 +1,80 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* Light background for better readability */
+    color: #343a40; /* Dark text for contrast */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #343a40; /* Dark background */
+}
+
+.navbar .nav-link {
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #f8c146; /* Highlight color */
+}
+
+/* Contact Page Styles */
+.container {
+    background-color: #ffffff; /* White background for content */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 30px;
+}
+
+/* Form Styling */
+form .form-control {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form .form-control:focus {
+    border-color: #f8c146; /* Highlight color */
+    box-shadow: 0 0 5px rgba(248, 193, 70, 0.5);
+}
+
+form button {
+    background-color: #f8c146;
+    border: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #d4a537;
+}
+
+/* Map Styling */
+.ratio {
+    border: 2px solid #f8c146; /* Highlight border */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Headings */
+h2 {
+    color: #343a40;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Utility Classes */
+.text-highlight {
+    color: #f8c146;
+}
+
+.mt-5 {
+    margin-top: 3rem !important;
+}
+
+.mb-5 {
+    margin-bottom: 3rem !important;
+}

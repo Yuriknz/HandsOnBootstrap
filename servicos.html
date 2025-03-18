@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Store - Coleções</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar fixa -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Fashion Store</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quem-somos.html">Quem Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="servicos.html">Coleções</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Olá, Usuário!
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-person-circle me-2"></i>Meu Perfil</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-key me-2"></i>Alterar Senha</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right me-2"></i>Sair</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner de Coleções -->
+    <div class="bg-dark text-white py-5 mt-5">
+        <div class="container py-4">
+            <h1 class="display-4">Nossas Coleções</h1>
+            <p class="lead">Descubra o melhor da moda para todas as estações e ocasiões.</p>
+        </div>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <div class="container my-5">
+        <!-- Filtros -->
+        <div class="row mb-4">
+            <div class="col-md-12">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title mb-3">Filtrar por:</h5>
+                        <div class="row">
+                            <div class="col-md-3 mb-3 mb-md-0">
+                                <select class="form-select">
+                                    <option selected>Categoria</option>
+                                    <option>Feminino</option>
+                                    <option>Masculino</option>
+                                    <option>Infantil</option>
+                                    <option>Acessórios</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3 mb-3 mb-md-0">
+                                <select class="form-select">
+                                    <option selected>Tamanho</option>
+                                    <option>PP</option>
+                                    <option>P</option>
+                                    <option>M</option>
+                                    <option>G</option>
+                                    <option>GG</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3 mb-3 mb-md-0">
+                                <select class="form-select">
+                                    <option selected>Cor</option>
+                                    <option>Preto</option>
+                                    <option>Branco</option>
+                                    <option>Azul</option>
+                                    <option>Vermelho</option>
+                                    <option>Verde</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <select class="form-select">
+                                    <option selected>Preço</option>
+                                    <option>Até R$ 50</option>
+                                    <option>R$ 50 - R$ 100</option>
+                                    <option>R$ 100 - R$ 200</option>
+                                    <option>Acima de R$ 200</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Coleção Feminina -->
+        <h2 class="mb-4">Coleção Feminina</h2>
+        <div class="row g-4 mb-5">
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <div class="position-relative">
+                        <img src="img/spring-wardrobe-switch-still-life.jpg" class="card-img-top" alt="Vestido Floral" width="300" height="auto">
+                        <span class="position-absolute top-0 end-0 bg-danger text-white px-2 py-1 m-2 rounded">-20%</span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Vestido Floral</h5>
+                        <p class="card-text text-muted">Vestido leve com estampa floral, ideal para o verão.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="text-decoration-line-through text-muted me-2">R$ 159,90</span>
+                                <span class="fw-bold text-danger">R$ 127,92</span>
+                            </div>
+                            <button class="btn btn-outline-primary btn-sm"><i class="bi bi-cart-plus"></i> Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img src="img/illustration-colorful-sleeveless-top-white-background.jpg" class="card-img-top" alt="Blusa Cropped" width="300" height="auto" >
+                    <div class="card-body">
+                        <h5 class="card-title">Blusa Cropped</h5>
+                        <p class="card-text text-muted">Blusa cropped básica em várias cores.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="fw-bold">R$ 79,90</span>
+                            </div>
+                            <button class="btn btn-outline-primary btn-sm"><i class="bi bi-cart-plus"></i> Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img src="/api/placeholder/300/400" class="card-img-top" alt="Calça Jeans">
+                    <div class="card-body">
+                        <h5 class="card-title">Calça Jeans Mom</h5>
+                        <p class="card-text text-muted">Calça jeans de cintura alta estilo mom.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="fw-bold">R$ 199,90</span>
+                            </div>
+                            <button class="btn btn-outline-primary btn-sm"><i class="bi bi-cart-plus"></i> Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <div class="position-relative">
+                        <img src="/api/placeholder/300/400" class="card-img-top" alt="Blazer Feminino">
+                        <span class="position-absolute top-0 end-0 bg-primary text-white px-2 py-1 m-2 rounded">Novo</span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Blazer Oversized</h5>
+                        <p class="card-text text-muted">Blazer oversized em tecido leve.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="fw-bold">R$ 249,90</span>
+                            </div>
+                            <button class="btn btn-outline-primary btn-sm"><i class="bi bi-cart-plus"></i> Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Coleção Masculina -->
+        <h2 class="mb-4">Coleção Masculina</h2>
+        <div class="row g-4 mb-5">
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img src="/api/placeholder/300/400" class="card-img-top" alt="Camisa Social">
+                    <div class="card-body">
+                        <h5 class="card-title">Camisa Social Slim</h5>
+                        <p class="card-text text-muted">Camisa social com corte slim fit e tecido de alta qualidade.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="fw-bold">R$ 179,90</span>
+                            </div>
+                            <button class="btn btn-outline-primary btn-sm"><i class="bi bi-cart-plus"></i> Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <div class="position-relative">
+                        <img src="/api/placeholder/300/400" class="card-img-top" alt="Camiseta Básica">
+                        <span class="position-absolute top-0 end-0 bg-success text-white px-2 py-1 m-2 rounded">Sustentável</span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Camiseta Básica</h5>
+                        <p class="card-text text-muted">Camiseta básica em algodão orgânico.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="fw-bold">R$ 69,90</span>
+                            </div>
+                            <button class="btn btn-outline-primary btn-sm"><i class="bi bi-cart-plus"></i> Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img src="/api/placeholder/300/400" class="card-img-top" alt="Calça Chino">
+                    <div class="card-body">
+                        <h5 class="card-title">Calça Chino</h5>
+                        <p class="card-text text-muted">Calça em tecido chino, ideal para ocasiões formais e informais.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="fw-bold">R$ 159,90</span>
+                            </div>
+                            <button class="btn btn-outline-primary btn-sm"><i class="bi bi-cart-plus"></i> Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <div class="position-relative">
+                        <img src="/api/placeholder/300/400" class="card-img-top" alt="Jaqueta Jeans">
+                        <span class="position-absolute top-0 end-0 bg-danger text-white px-2 py-1 m-2 rounded">-15%</span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Jaqueta Jeans</h5>
+                        <p class="card-text text-muted">Jaqueta jeans tradicional com lavagem média.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="text-decoration-line-through text-muted me-2">R$ 229,90</span>
+                                <span class="fw-bold text-danger">R$ 195,42</span>
+                            </div>
+                            <button class="btn btn-outline-primary btn-sm"><i class="bi bi-cart-plus"></i> Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Acessórios -->
+        <h2 class="mb-4">Acessórios</h2>
+        <div class="row g-4">
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img src="/api/placeholder/300/300" class="card-img-top" alt="Bolsa">
+                    <div class="card-body">
+                        <h5 class="card-title">Bolsa Tote</h5>
+                        <p class="card-text text-muted">Bolsa tote em couro sintético com alça removível.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="fw-bold">R$ 189,90</span>
+                            </div>
+                            <button class="btn btn-outline-primary btn-sm"><i class="bi bi-cart-plus"></i> Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img src="/api/placeholder/300/300" class="card-img-top" alt="Cinto">
+                    <div class="card-body">
+                        <h5 class="card-title">Cinto Clássico</h5>
+                        <p class="card-text text-muted">Cinto em couro legítimo com fivela metálica.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="fw-bold">R$ 99,90</span>
+                            </div>
+                            <button class="btn btn-outline-primary btn-sm"><i class="bi bi-cart-plus"></i> Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <div class="position-relative">
+                        <img src="/api/placeholder/300/300" class="card-img-top" alt="Óculos de Sol">
+                        <span class="position-absolute top-0 end-0 bg-primary text-white px-2 py-1 m-2 rounded">Novo</span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Óculos de Sol</h5>
+                        <p class="card-text text-muted">Óculos de sol com proteção UV e armação moderna.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="fw-bold">R$ 149,90</span>
+                            </div>
+                            <button class="btn btn-outline-primary btn-sm"><i class="bi bi-cart-plus"></i> Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img src="/api/placeholder/300/300" class="card-img-top" alt="Relógio">
+                    <div class="card-body">
+                        <h5 class="card-title">Relógio Analógico</h5>
+                        <p class="card-text text-muted">Relógio analógico com pulseira em couro sintético.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="fw-bold">R$ 259,90</span>
+                            </div>
+                            <button class="btn btn-outline-primary btn-sm"><i class="bi bi-cart-plus"></i> Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Paginação -->
+        <div class="row mt-4">
+            <div class="col-12">
+                <nav aria-label="Navegação de página">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Anterior</a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Próximo</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5>Fashion Store</h5>
+                    <p>Sua melhor opção em moda e estilo.</p>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white me-2"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5>Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="quem-somos.html" class="text-white text-decoration-none">Quem Somos</a></li>
+                        <li><a href="servicos.html" class="text-white text-decoration-none">Coleções</a></li>
+                        <li><a href="contato.html" class="text-white text-decoration-none">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contato</h5>
+                    <address class="mb-0">
+                        <p><i class="bi bi-geo-alt me-2"></i> Av. das Modas, 1000</p>
+                        <p><i class="bi bi-telephone me-2"></i> (11) 99999-9999</p>
+                        <p><i class="bi bi-envelope me-2"></i> contato@fashionstore.com.br</p>
+                    </address>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2025 Fashion Store. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
